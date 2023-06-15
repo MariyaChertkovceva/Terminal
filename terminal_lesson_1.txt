@@ -1,0 +1,11 @@
+cd
+mkdir
+touch
+vim
+pwd
+rm
+mv
+head
+find
+[A
+[A[Btail
