@@ -20,4 +20,19 @@ tail - f Ivanov.txt | grep
 18) вывести несколько последних строк из текстового файла - tail -n 2 Ivanov.txt
 19) просмотреть содержимое длинного файла (команда less) изучите как она работает. less название файла
 20) вывести дату и время - date.
+21) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+mkdir bash_script.sh
+vim bash_script.sh
+#!/bin/bash
+mkdir Staff
+cd Staff
+mkdir Developer, Engineer, Manager
+cd Developer
+touch Ivanov.txt Smirnov.txt Petrov.txt Ivanov.json Smirnov.json
+mkdir Experience_1_year Experience_2_year Experience_3_year
+ls -l
+mv Ivanov.txt Smirnov.txt ../Manager
+
+Запустить: bash bash_script.sh
+
 
