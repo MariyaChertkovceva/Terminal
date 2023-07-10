@@ -1,26 +1,61 @@
-Посмотреть где я - pwd
-Создать папку - mkdir 
-Зайти в папку - cd Staff
-Создать 3 папки - mkdir Developer, Engineer, Manager
-Зайти в любую папку - cd Developer
-Создать 5 файлов (3 txt, 2 json) - touch Ivanov.txt Smirnov.txt Petrov.txt Ivanov.json Smirnov.json
-Создать 3 папки - mkdir Experience_1_year Experience_2_year Experience_3_year
-Вывести список содержимого папки - ls-la
-+ Открыть любой txt файл - cat Ivanov.txt
-+ написать туда что-нибудь, любой текст - cat > Ivanov.txt 
-+ сохранить и выйти - ctrl + C
-Выйти из папки на уровень выше - cd..
+Посмотреть где я:
+pwd
+
+Создать папку:
+mkdir
+
+Зайти в папку:
+cd Staff
+
+Создать 3 папки:
+mkdir Developer, Engineer, Manager
+
+Зайти в любую папку:
+cd Developer
+
+Создать 5 файлов (3 txt, 2 json):
+touch Ivanov.txt Smirnov.txt Petrov.txt Ivanov.json Smirnov.json
+
+Создать 3 папки:
+mkdir Experience_1_year Experience_2_year Experience_3_year
+
+Вывести список содержимого папки:
+ls-la
+
++ Открыть любой txt файл:
+cat Ivanov.txt
++ написать туда что-нибудь, любой текст:
+cat > Ivanov.txt 
++ сохранить и выйти:
+ctrl + C
+
+Выйти из папки на уровень выше:
+cd..
 —
-Переместить любые 2 файла, которые вы создали, в любую другую папку - mv Developer/Ivanov.txt Developer/Smirnov.txt Manager/
-Скопировать любые 2 файла, которые вы создали, в любую другую папку -  cp Manager/Smirnov.txt Manager/Ivanov.txt Developer/
-Найти файл по имени - find . -name Ivanov.txt
-Просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+Переместить любые 2 файла, которые вы создали, в любую другую папку:
+mv Developer/Ivanov.txt Developer/Smirnov.txt Manager/
+
+Скопировать любые 2 файла, которые вы создали, в любую другую папку:
+cp Manager/Smirnov.txt Manager/Ivanov.txt Developer/
+
+Найти файл по имени:
+find . -name Ivanov.txt
+
+Просмотреть содержимое в реальном времени:
 tail - f Ivanov.txt | grep 
-Вывести несколько первых строк из текстового файла - head -n 2 Ivanov.txt (первые 2)
-Вывести несколько последних строк из текстового файла - tail -n 2 Ivanov.txt
-<S-Del>
-Просмотреть содержимое длинного файла (команда less) изучите как она работает. less название файла
-Вывести дату и время - date.
+
+Вывести несколько первых строк из текстового файла:
+head -n 2 Ivanov.txt
+
+Вывести несколько последних строк из текстового файла
+tail -n 2 Ivanov.txt
+
+Просмотреть содержимое длинного файла (команда less) изучите как она работает.
+less название файла
+
+Вывести дату и время:
+date
+
 Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
 mkdir bash_script.sh
 vim bash_script.sh
